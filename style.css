@@ -31,9 +31,11 @@ body {
 }
 
 main {
-  background-image: url(images/test2.png);
-  width: 100%;
+  background-image: url("images/stars.gif");
+  margin: 0;
+  padding: 0;
   height: 100%;
+  width: 100%;
 }
 
 img {
