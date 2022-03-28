@@ -67,6 +67,7 @@ button {
 button a {
   text-decoration: none;
   color: white;
+  font-size: 1rem;
 }
 
 .button_wrapper {
@@ -332,9 +333,9 @@ header {
   padding-block: 1rem;
 }
 
-#list {
+/* #list {
   background-color: var(--color-darker);
-}
+} */
 
 .list_header {
   padding-top: 1rem;
@@ -342,7 +343,18 @@ header {
 
 .list_header > h2 {
   margin-top: 1rem;
-  color: var(--color-lighter);
+  /*  color: var(--color-lighter); */
+}
+
+/*----------------------------projects individual pages-----------------------*/
+
+.project_header {
+  margin: 1rem;
+}
+
+.project_buttons {
+  width: 100%;
+  margin-block: 0.5rem;
 }
 
 /*---------------------------footer-----------------------*/
