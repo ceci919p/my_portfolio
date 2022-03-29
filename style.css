@@ -57,9 +57,9 @@ img {
 }
 
 button {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background-color: black;
-  color: white;
+  /* color: white; */
   border: none;
   cursor: pointer;
 }
@@ -93,6 +93,23 @@ button a {
 
 .red {
   background-color: var(--color-dark);
+}
+
+.black {
+  background-color: rgba(0, 0, 0, 0.808);
+}
+
+.shadow {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.38);
+}
+
+.img_center {
+  display: flex;
+  justify-content: center;
+}
+
+.short {
+  max-height: 60vh;
 }
 
 /*----------------------------typography-----------------------*/
@@ -304,7 +321,7 @@ header {
   padding-block: 1rem;
   margin-block: 1rem;
   background-color: var(--color-lighter);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.38);
   text-align: center;
 }
 
@@ -357,12 +374,73 @@ header {
   margin-block: 0.5rem;
 }
 
+/* .highlight {
+  display: flex;
+  min-height: 70vh;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--color-darker);
+  background-color: var(--color-light);
+  flex-wrap: wrap;
+} */
+
+.center_content {
+  display: flex;
+  min-height: 50vh;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.center_content > img {
+  margin-block: 1rem;
+}
+
+.mockup {
+  display: grid;
+  grid-template-columns: auto minmax(0, 900px) auto;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding-inline: 1rem;
+}
+
+.mockup_wrapper {
+  grid-column: 2/3;
+}
+
+.mockup_items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.desktop {
+  grid-column: 1/5;
+}
+
+.process_text {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  background-color: var(--color-light);
+}
+
+.process_text_wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1200px) auto;
+  align-items: center;
+}
+
+.process_text_container {
+  grid-column: 2/3;
+}
+
 /*---------------------------footer-----------------------*/
 
 footer {
   background-color: var(--color-darker);
   padding: 1rem;
-  margin-top: 3rem;
   color: var(--color-lighter);
 }
 
@@ -404,7 +482,7 @@ footer li a:hover {
     top: 70px;
     gap: 1rem;
     flex-direction: column;
-    background-color: var(--color-accent2);
+    background-color: var(--color-dark);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -418,7 +496,8 @@ footer li a:hover {
 
   .nav_link {
     transition: 0.7s ease;
-    color: var(--color-lighter);
+    color: var(--color-darker);
+    font-size: 1.2rem;
   }
 
   .nav_link:hover {
@@ -449,14 +528,8 @@ footer li a:hover {
     min-height: 80vh;
   }
 
-  .article_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .project_pic,
-  .text_wrapper {
-    max-width: 35vw;
+  .project_pic {
+    max-width: 55vw;
   }
 
   .experience_item {
@@ -490,6 +563,50 @@ footer li a:hover {
   .contact_info {
     margin-left: 5rem;
   }
+
+  /* .highlight {
+    padding: 2rem;
+    min-height: 50vh;
+  }
+  .highlight > div {
+    max-width: 45vw;
+  }
+
+  .highlight > h3 {
+    margin-top: 0;
+  } */
+
+  .small {
+    max-width: 400px;
+  }
+
+  .big {
+    /*  max-width: 50vw; */
+
+    max-width: 35vw;
+  }
+
+  .mobile {
+    /*     max-width: 50vw; */
+
+    max-width: 35vw;
+  }
+
+  .process_text {
+    padding: 3rem;
+  }
+
+  .right {
+    display: flex;
+    justify-content: end;
+  }
+
+  .text_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 30vh;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -500,5 +617,43 @@ footer li a:hover {
   #intro_text {
     width: 40vw;
     min-width: 300px;
+  }
+
+  .article_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .text_wrapper {
+    max-width: 35vw;
+  }
+
+  .project_header {
+    margin: 5rem;
+  }
+
+  .project_pic {
+    max-width: 35vw;
+  }
+
+  .text_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 70vh;
+    padding: 1.5rem;
+  }
+
+  .mobile,
+  .big {
+    max-width: 35vw;
+  }
+
+  .description_left {
+    margin-left: 4rem;
+  }
+
+  .description_right {
+    margin-right: 4rem;
   }
 }
