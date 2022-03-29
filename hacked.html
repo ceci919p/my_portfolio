@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animation</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h5><a class="logo" href="index.html">Cecilie Jasmin</a></h5>
+      <ul class="nav_menu">
+        <li class="nav_item">
+          <a href="animation.html" class="nav_link">Animation</a>
+        </li>
+        <li class="nav_item">
+          <a href="redesign.html" class="nav_link">Redesign</a>
+        </li>
+        <li class="nav_item">
+          <a href="hogwarts.html" class="nav_link">Hacked Hogwarts</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <section class="project_header">
+      <article class="article_wrapper">
+        <section class="project_graphics">
+          <img
+            class="project_pic"
+            src="images/hacked_hogwarts.png"
+            alt="project"
+          />
+        </section>
+
+        <section class="project_text">
+          <div class="text_wrapper">
+            <h1>Hacked Hogwarts</h1>
+            <p>
+              Have you ever dreamed of being the administrator of Hogwarts
+              School of Witchcraft and Wizardry? I have built a system to help
+              you become exactly that – and if you feel adventurous you might
+              find some secrets along the way.
+            </p>
+
+            <div class="center">
+              <div>
+                <button class="project_buttons">
+                  <a
+                    href="http://ceciliejasmin.dk/kea/11_just_javascript/hacked_hogwarts_student_list/"
+                    >Visit website</a
+                  >
+                </button>
+              </div>
+
+              <div>
+                <button class="project_buttons red">
+                  <a
+                    href="https://github.com/ceci919p/hacked_hogwarts_student_list"
+                    >Github</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
+
+    <section class="process_text">
+      <div class="process_text_wrapper">
+        <div class="process_text_container">
+          <section class="text_section">
+            <div class="description_right">
+              <h2>The Process</h2>
+              <p>
+                In this project we had to build a system to help administrators
+                handle student lists. The requirements for the task were to
+                provide an interface to show the student list with filtering and
+                sorting options. When clicking on a student a popup window with
+                detailed information about each student should be shown. There
+                should also be an option to expel students and see a list of
+                expelled students. The administrator should be able to make two
+                students for each house a prefect and this should show in their
+                popup. In addition, some students can join the inquisitorial
+                squad based on blood-status. After these requirements were met,
+                we had to “hack” the system, inject ourselves to the list and
+                make us unable to be expelled. We also had to break the
+                inquisitorial squad by removing students shortly after they had
+                been added. Finally, we had to mess up the pure-blood algorithm.
+              </p>
+            </div>
+            <div class="right">
+              <img class="mobile" src="images/Hacked_hogwarts2.png" alt="" />
+            </div>
+          </section>
+
+          <section class="text_section">
+            <div class="description_left">
+              <h2>Code Planning</h2>
+
+              <p>
+                Since this project had a lot of requirements, I decided to split
+                it up in 4 parts. To plan the code, I made activity diagrams for
+                each of the parts.
+              </p>
+            </div>
+            <div class="left">
+              <img
+                class="big shadow"
+                src="images/codeplanning.png"
+                alt="activity diagram"
+              />
+            </div>
+          </section>
+
+          <section class="text_section">
+            <div class="description_right">
+              <h2>Part 1</h2>
+
+              <p>
+                I started coding the display of the student with filtering,
+                sorting, searching and popup window.
+              </p>
+            </div>
+            <div class="right">
+              <img
+                class="big shadow"
+                src="images/filter.png"
+                alt="activity diagram"
+              />
+            </div>
+          </section>
+
+          <section class="text_section">
+            <div class="description_left">
+              <h2>Part 2</h2>
+
+              <p>
+                The next part was planning and coding how to expel students and
+                how to make them prefects. When making the prefect function we
+                had to make some rules. Only two students – one girl and one boy
+                - from each house could be prefects.
+              </p>
+            </div>
+            <div class="left">
+              <img
+                class="big shadow"
+                src="images/expelling.png"
+                alt="activity diagram"
+              />
+            </div>
+          </section>
+
+          <section class="text_section">
+            <div class="description_right">
+              <h2>Part 3</h2>
+
+              <p>
+                The third part was planning and then coding how to get the
+                blood-status and display them in the popup. In addition, we had
+                to make the inquisitorial squad function. Only purebloods could
+                be part of this squad, so we had to check the student’s
+                blood-status and make a modal warning if the student didn’t meet
+                the requirements.
+              </p>
+            </div>
+            <div class="right">
+              <img
+                class="big shadow"
+                src="images/bloodstatus.png"
+                alt="activity diagram"
+              />
+            </div>
+          </section>
+
+          <section class="text_section">
+            <div class="description_left">
+              <h2>Part 4</h2>
+
+              <p>
+                The final part was the hacking where I made a function called
+                hackTheSystem(). The first thing to happen was injecting me to
+                the student list. To make sure I couldn’t be expelled I made a
+                rule saying that the hacker couldn’t be expelled. In the second
+                part I had to randomize the blood-status of pure-bloods and
+                making the half- and muggle-bloods listed as pure-bloods.
+                Finally, I had to make the inquisitorial squad only work for a
+                short amount of time so that the removal was noticeable.
+              </p>
+            </div>
+            <div class="left">
+              <img
+                class="big shadow"
+                src="images/hacking.png"
+                alt="activity diagram"
+              />
+            </div>
+          </section>
+
+          <section class="text_section">
+            <div class="description_right">
+              <h2>Design</h2>
+
+              <p>
+                There weren’t many requirements for the visual design other than
+                making a theme in the popup for each house. I went with the red,
+                blue, green, and yellow colors from the franchise. When
+                designing the Hogwarts crest, I used the same colors as the
+                popup themes. I based the design of the crest from the movies
+                and simplified it removing smaller details and focusing on
+                colors, shapes, and shadows of animals. The different house
+                crests are drawn in the same style but has a few extra minor
+                details. I also designed the search icon which consists of a
+                magnifying glass with a feather instead of a handle. The feather
+                was to make it look more magical and as if it is hovering in the
+                air. To ideate a design for the prefect and inquisitorial squad
+                badges I watched the movies and searched for merchandise. The
+                result of the research is what the designs are based on – I just
+                made my own interpretation of them. I used classical,
+                extravagant, and dramatic shapes and details to make it look
+                almost antique and match the visual identity of Hogwarts.
+              </p>
+            </div>
+            <div class="img_center">
+              <img
+                class="mobile short"
+                src="images/Hacked_hogwarts3.png"
+                alt="activity diagram"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="contact_info">
+        <h5>CONTACT INFO</h5>
+        <div>
+          <ul>
+            <li>Cecilie Jasmin Jørgensen</li>
+
+            <li>
+              <a href="mailto:ceci919p@stud.kea.dk">ceci919p@stud.kea.dk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="social_media">
+        <div>
+          <h5 class="footer_headline">SOCIALE MEDIA</h5>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/ceci919p?tab=repositories"
+                target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/cecilie-jasmin/">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="js/burgermenu.js"></script>
+</html>
