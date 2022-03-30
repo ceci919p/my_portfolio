@@ -1,24 +1,12 @@
-gsap.registerPlugin(ScrollTrigger);
+/* gsap.registerPlugin(ScrollTrigger); */
 
 window.addEventListener("DOMContentLoaded", loaded);
 
 function loaded() {
-  revealAnimation();
+  console.log("welcome");
+  test();
 }
 
-function revealAnimation() {
-  gsap.utils.toArray("section").forEach((section) => {
-    var tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: section,
-        toggleActions: "restart none none none",
-        start: "top 95%",
-      },
-    });
-
-    tl.to(section, {
-      duration: 1.5,
-      opacity: 1,
-    });
-  });
+function test() {
+  gsap.from("#intro_text", { duration: 3, opacity: 0 });
 }
