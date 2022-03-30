@@ -370,8 +370,8 @@ header {
 }
 
 .project_buttons {
-  width: 100%;
   margin-block: 0.5rem;
+  width: 100%;
 }
 
 /* .highlight {
@@ -607,6 +607,15 @@ footer li a:hover {
     align-items: center;
     min-height: 30vh;
   }
+
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .project_buttons {
+    width: 40vw;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -655,5 +664,9 @@ footer li a:hover {
 
   .description_right {
     margin-right: 4rem;
+  }
+
+  .project_buttons {
+    width: 18vw;
   }
 }
