@@ -69,7 +69,15 @@ button {
   background-color: black;
   /* color: white; */
   border: none;
+
+  position: relative;
+  top: 0;
+  transition: 0.5s ease-out;
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 button a {
