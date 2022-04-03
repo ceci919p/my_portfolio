@@ -49,7 +49,7 @@
       <div class="intro_container">
         <div class="pic_and_text">
           <div class="image_container">
-            <div class="image">
+            <div class="image gs_reveal gs_reveal_fromLeft">
               <img
                 class="profilepic"
                 src="images/profilbillede2.png"
@@ -60,9 +60,10 @@
           </div>
 
           <article id="intro_text">
-            <h1>Hi, I'm Cecilie Jasmin</h1>
-            <!--   <p class="specialization">Aspiring Front-end Developer</p> -->
-            <p>
+            <h1 class="gs_reveal">Hi, I'm Cecilie Jasmin</h1>
+            <h5 class="specialization">Aspiring Front-end Developer</h5>
+
+            <p class="gs_reveal">
               I’m 25 years old and currently studying Multimedia Design at KEA
               on third semester specializing in Front-end Development. I’m very
               passionate about coding, UI & UX and graphic designs. I love
@@ -170,7 +171,11 @@
 
       <article class="article_wrapper">
         <section class="project_graphics black">
-          <img class="project_pic" src="images/animation.png" alt="project" />
+          <img
+            class="project_pic gs_reveal gs_reveal_fromRight"
+            src="images/animation.png"
+            alt="project"
+          />
         </section>
 
         <section class="project_text left">
@@ -182,7 +187,7 @@
               while being creative with the game concept and game design.
             </p>
 
-            <div class="center">
+            <div class="img_center">
               <button class="red">
                 <a href="animation.html">SEE PROJECT</a>
               </button>
@@ -193,7 +198,11 @@
 
       <article class="article_wrapper">
         <section class="project_graphics black">
-          <img class="project_pic" src="images/foxholm.png" alt="project" />
+          <img
+            class="project_pic gs_reveal gs_reveal_fromLeft"
+            src="images/foxholm.png"
+            alt="project"
+          />
         </section>
 
         <section class="project_text">
@@ -217,7 +226,7 @@
       <article class="article_wrapper">
         <section class="project_graphics black">
           <img
-            class="project_pic"
+            class="project_pic gs_reveal gs_reveal_fromRight"
             src="images/hacked_hogwarts.png"
             alt="project"
           />
@@ -251,7 +260,10 @@
             <li>Cecilie Jasmin Jørgensen</li>
 
             <li>
-              <a href="mailto:ceci919p@stud.kea.dk">ceci919p@stud.kea.dk</a>
+              <a class="foot_link" href="mailto:ceci919p@stud.kea.dk"
+                ><img class="link_icon" src="images/mail.png" alt="mail" />Send
+                mail</a
+              >
             </li>
           </ul>
         </div>
@@ -263,13 +275,28 @@
           <ul>
             <li>
               <a
+                class="foot_link"
                 href="https://github.com/ceci919p?tab=repositories"
                 target="_blank"
-                >Github</a
               >
+                <img
+                  class="link_icon"
+                  src="images/github.png"
+                  alt="github"
+                />Github
+              </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/cecilie-jasmin/">Linkedin</a>
+              <a
+                class="foot_link"
+                href="https://www.linkedin.com/in/cecilie-jasmin/"
+              >
+                <img
+                  class="link_icon"
+                  src="images/linkedin.png"
+                  alt="github"
+                />Linkedin</a
+              >
             </li>
           </ul>
         </div>
@@ -277,7 +304,6 @@
     </footer>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="js/burgermenu.js"></script>
   <script src="js/reveal.js"></script>
