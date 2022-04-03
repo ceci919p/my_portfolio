@@ -34,13 +34,6 @@ body {
   line-height: 1.8;
   margin: 0;
 
-  /* background-image: url(images/background2.svg);
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; */
-
   width: 100%;
   height: 100%;
   background-image: url(images/background2.svg);
@@ -67,7 +60,6 @@ img {
 button {
   padding: 1rem 2rem;
   background-color: black;
-  /* color: white; */
   border: none;
 
   position: relative;
@@ -295,6 +287,7 @@ header {
   grid-template-columns: auto minmax(0, 1000px) auto;
   align-items: center;
   background-color: var(--color-light);
+  padding-block: 2rem;
 }
 
 .intro_container {
@@ -314,12 +307,20 @@ header {
   min-width: 300px;
 }
 
+#intro_text > h1 {
+  margin-bottom: 0;
+}
+
 .profilepic {
   max-height: 50vh;
 }
 
 .specialization {
   margin-top: 0;
+}
+
+.specialization {
+  color: var(--color-dark);
 }
 
 /*----------------------------experience-----------------------*/
@@ -357,11 +358,34 @@ header {
 }
 
 .experience_img {
-  height: 20vh;
+  max-height: 18vh;
   margin-inline: auto;
+  width: auto;
 }
 
-/*----------------------------projects-----------------------*/
+/*----------------------------project pages-----------------------*/
+
+.back_link {
+  color: white;
+  text-decoration: none;
+}
+
+.back {
+  background-color: black;
+  width: 15vw;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  text-align: center;
+
+  position: relative;
+  top: 0;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.back:hover {
+  transform: translateX(-8px);
+}
 
 .project_graphics {
   padding-inline: 2rem;
@@ -386,17 +410,18 @@ header {
   padding-block: 1rem;
 }
 
-/* #list {
-  background-color: var(--color-darker);
-} */
-
 .list_header {
   padding-top: 1rem;
 }
 
 .list_header > h2 {
   margin-top: 1rem;
-  /*  color: var(--color-lighter); */
+}
+
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
 }
 
 /*----------------------------projects individual pages-----------------------*/
@@ -409,17 +434,6 @@ header {
   margin-block: 0.5rem;
   width: 100%;
 }
-
-/* .highlight {
-  display: flex;
-  min-height: 70vh;
-  padding: 1.5rem;
-  align-items: center;
-  justify-content: space-around;
-  color: var(--color-darker);
-  background-color: var(--color-light);
-  flex-wrap: wrap;
-} */
 
 .center_content {
   display: flex;
@@ -480,6 +494,10 @@ footer {
   color: var(--color-lighter);
 }
 
+footer > li {
+  text-align: center;
+}
+
 footer li a {
   text-decoration: none;
   color: var(--color-lighter);
@@ -491,6 +509,25 @@ footer li a:hover {
 
 .social_media {
   margin-block: 3rem 1rem;
+}
+
+.foot_link {
+  display: flex;
+  align-items: center;
+  margin-block: 1rem;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.foot_link:hover {
+  transform: scale(1.05);
+}
+
+.link_icon {
+  height: 32px;
+  margin-right: 0.5rem;
 }
 
 /*----------------------------mediaquerys-----------------------*/
@@ -600,18 +637,6 @@ footer li a:hover {
     margin-left: 5rem;
   }
 
-  /* .highlight {
-    padding: 2rem;
-    min-height: 50vh;
-  }
-  .highlight > div {
-    max-width: 45vw;
-  }
-
-  .highlight > h3 {
-    margin-top: 0;
-  } */
-
   .small {
     max-width: 400px;
   }
@@ -674,7 +699,7 @@ footer li a:hover {
   }
 
   .project_header {
-    margin: 5rem;
+    margin-bottom: 5rem;
   }
 
   .project_pic {
@@ -704,5 +729,9 @@ footer li a:hover {
 
   .project_buttons {
     width: 18vw;
+  }
+
+  .experience_img {
+    max-height: 20vh;
   }
 }
