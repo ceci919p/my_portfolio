@@ -372,8 +372,8 @@ header {
 
 .back {
   background-color: black;
-  width: 15vw;
-  padding: 1rem 2rem;
+
+  padding: 0.7rem 0.2rem;
   margin: 1rem;
   text-align: center;
 
@@ -677,6 +677,10 @@ footer li a:hover {
   .project_buttons {
     width: 40vw;
   }
+
+  .back {
+    width: 20vw;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -733,5 +737,9 @@ footer li a:hover {
 
   .experience_img {
     max-height: 20vh;
+  }
+
+  .back {
+    width: 15vw;
   }
 }
