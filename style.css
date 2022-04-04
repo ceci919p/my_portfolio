@@ -57,7 +57,7 @@ img {
   display: block;
 }
 
-button {
+.button {
   padding: 1rem 2rem;
   background-color: black;
   border: none;
@@ -68,21 +68,22 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   transform: scale(1.05);
 }
 
-button a {
+a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .button_wrapper {
   text-align: center;
 }
 
-.center {
+.center_text {
   text-align: center;
 }
 
@@ -111,7 +112,7 @@ button a {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.38);
 }
 
-.img_center {
+.center {
   display: flex;
   justify-content: center;
 }
@@ -212,6 +213,7 @@ nav a {
 .nav_link {
   transition: 0.7s ease;
   color: var(--color-darker);
+  font-weight: lighter;
 }
 
 .nav_link:hover {
@@ -433,6 +435,7 @@ header {
 .project_buttons {
   margin-block: 0.5rem;
   width: 100%;
+  margin-inline: 0.5rem;
 }
 
 .center_content {
@@ -519,6 +522,7 @@ footer li a:hover {
   top: 0;
   transition: 0.5s ease-out;
   cursor: pointer;
+  font-weight: lighter;
 }
 
 .foot_link:hover {
