@@ -38,7 +38,7 @@
         <section class="project_graphics">
           <img
             class="project_pic"
-            src="images/hacked_hogwarts.png"
+            src="images/hacked_hogwarts2.png"
             alt="project"
           />
         </section>
@@ -47,10 +47,12 @@
           <div class="text_wrapper">
             <h1>Hacked Hogwarts</h1>
             <p>
-              Have you ever dreamed of being the administrator of Hogwarts
-              School of Witchcraft and Wizardry? I have built a system to help
-              you become exactly that – and if you feel adventurous you might
-              find some secrets along the way.
+              In this project I learned how to make you the administrator of the
+              Hogwarts student list of ’91. With the magic of HTML, CSS, and a
+              lot of JavaScript I have mixed the perfect potion to give you the
+              powers to expel student or give them unique statuses. If you are
+              feeling extra rebellious you can look for the hidden mysterious
+              button.
             </p>
 
             <div class="center flex">
@@ -84,22 +86,20 @@
         <div class="process_text_container">
           <section class="text_section">
             <div class="description_right">
-              <h2>The Process</h2>
+              <h2>The requirements</h2>
               <p>
-                In this project we had to build a system to help administrators
-                handle student lists. The requirements for the task were to
-                provide an interface to show the student list with filtering and
-                sorting options. When clicking on a student a popup window with
-                detailed information about each student should be shown. There
-                should also be an option to expel students and see a list of
-                expelled students. The administrator should be able to make two
-                students for each house a prefect and this should show in their
-                popup. In addition, some students can join the inquisitorial
-                squad based on blood-status. After these requirements were met,
-                we had to “hack” the system, inject ourselves to the list and
-                make us unable to be expelled. We also had to break the
-                inquisitorial squad by removing students shortly after they had
-                been added. Finally, we had to mess up the pure-blood algorithm.
+                In this project we had to provide a UI to show a student list
+                with options such as filtering, sorting, and expelling students.
+                When clicking on a student additional information should be
+                shown in a popup window. In this view the user should be able to
+                make two students for each house prefect and pureblood students’
+                member of the inquisitorial squad. If a student can be given a
+                unique status a modal warning should appear. <br />To show the
+                students and their information we fetched the JSON data using
+                async function and API. If the user is feeling adventurous a
+                secret button can be found which initializes hacking of the
+                system. This inserts a student to the array and randomizes
+                student information which messes up the unique statuses.
               </p>
             </div>
             <div class="right">
@@ -109,12 +109,19 @@
 
           <section class="text_section">
             <div class="description_left">
-              <h2>Code Planning</h2>
+              <h2>Code</h2>
 
               <p>
-                Since this project had a lot of requirements, I decided to split
-                it up in 4 parts. To plan the code, I made activity diagrams for
-                each of the parts.
+                Since this project had a lot of requirements, I had to visualize
+                the code. To make it easier for myself I split the project up in
+                4 parts. For each part I either made a general or detailed
+                activity diagram. With these activity diagrams I visualized the
+                flow of the functions, which parameters to be passed on, the
+                cleaning of the data, the different return values, and when to
+                use functions with closure. Lastly, I drew the different
+                scenarios with the modal warnings. This was very helpful for me
+                when figuring out how to fetch two types of JSON data with async
+                function and API.
               </p>
             </div>
             <div class="left">
@@ -128,110 +135,26 @@
 
           <section class="text_section">
             <div class="description_right">
-              <h2>Part 1</h2>
-
-              <p>
-                I started coding the display of the student with filtering,
-                sorting, searching and popup window.
-              </p>
-            </div>
-            <div class="right">
-              <img
-                class="big shadow"
-                src="images/filter.png"
-                alt="activity diagram"
-              />
-            </div>
-          </section>
-
-          <section class="text_section">
-            <div class="description_left">
-              <h2>Part 2</h2>
-
-              <p>
-                The next part was planning and coding how to expel students and
-                how to make them prefects. When making the prefect function we
-                had to make some rules. Only two students – one girl and one boy
-                - from each house could be prefects.
-              </p>
-            </div>
-            <div class="left">
-              <img
-                class="big shadow"
-                src="images/expelling.png"
-                alt="activity diagram"
-              />
-            </div>
-          </section>
-
-          <section class="text_section">
-            <div class="description_right">
-              <h2>Part 3</h2>
-
-              <p>
-                The third part was planning and then coding how to get the
-                blood-status and display them in the popup. In addition, we had
-                to make the inquisitorial squad function. Only purebloods could
-                be part of this squad, so we had to check the student’s
-                blood-status and make a modal warning if the student didn’t meet
-                the requirements.
-              </p>
-            </div>
-            <div class="right">
-              <img
-                class="big shadow"
-                src="images/bloodstatus.png"
-                alt="activity diagram"
-              />
-            </div>
-          </section>
-
-          <section class="text_section">
-            <div class="description_left">
-              <h2>Part 4</h2>
-
-              <p>
-                The final part was the hacking where I made a function called
-                hackTheSystem(). The first thing to happen was injecting me to
-                the student list. To make sure I couldn’t be expelled I made a
-                rule saying that the hacker couldn’t be expelled. In the second
-                part I had to randomize the blood-status of pure-bloods and
-                making the half- and muggle-bloods listed as pure-bloods.
-                Finally, I had to make the inquisitorial squad only work for a
-                short amount of time so that the removal was noticeable.
-              </p>
-            </div>
-            <div class="left">
-              <img
-                class="big shadow"
-                src="images/hacking.png"
-                alt="activity diagram"
-              />
-            </div>
-          </section>
-
-          <section class="text_section">
-            <div class="description_right">
               <h2>Design</h2>
 
               <p>
-                There weren’t many requirements for the visual design other than
-                making a theme in the popup for each house. I went with the red,
-                blue, green, and yellow colors from the franchise. When
-                designing the Hogwarts crest, I used the same colors as the
-                popup themes. I based the design of the crest from the movies
-                and simplified it removing smaller details and focusing on
+                To structure the layout and style the UI I used my skills in
+                CSS. To make the student list responsive I used Grid, Flexbox
+                and Media Queries for mobile, tablet and desktop sizes. When
+                designing the popup theme for each house I used conditional
+                statements and added colors to the elements in JavaScript.
+                <br />When designing the Hogwarts crest, I simplified the
+                original one by removing smaller details and focusing on house
                 colors, shapes, and shadows of animals. The different house
                 crests are drawn in the same style but has a few extra minor
                 details. I also designed the search icon which consists of a
-                magnifying glass with a feather instead of a handle. The feather
-                was to make it look more magical and as if it is hovering in the
-                air. To ideate a design for the prefect and inquisitorial squad
-                badges I watched the movies and searched for merchandise. The
-                result of the research is what the designs are based on – I just
-                made my own interpretation of them. I used classical,
-                extravagant, and dramatic shapes and details to make it look
-                almost antique and match the visual identity of Hogwarts.
+                magnifying glass with a feather instead of a handle to make it
+                look as if it is hovering in the air. <br />
+                The design of the prefect and inquisitorial squad badges are
+                based on the franchise and my own interpretation. I used
+                classical, extravagant, and dramatic shapes and details to make
+                it look almost antique and match the visual identity of
+                Hogwarts.
               </p>
             </div>
             <div class="center">

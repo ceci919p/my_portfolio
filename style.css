@@ -432,6 +432,17 @@ header {
   margin: 1rem;
 }
 
+.process_headline {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  color: var(--color-lighter);
+  background-color: rgba(0, 0, 0, 0.808);
+}
+
+.process_title {
+  margin: 0;
+}
+
 .project_buttons {
   margin-block: 0.5rem;
   width: 100%;
@@ -449,28 +460,6 @@ header {
 
 .center_content > img {
   margin-block: 1rem;
-}
-
-.mockup {
-  display: grid;
-  grid-template-columns: auto minmax(0, 900px) auto;
-  align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  padding-inline: 1rem;
-}
-
-.mockup_wrapper {
-  grid-column: 2/3;
-}
-
-.mockup_items {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.desktop {
-  grid-column: 1/5;
 }
 
 .process_text {
@@ -659,6 +648,7 @@ footer li a:hover {
 
   .process_text {
     padding: 3rem;
+    padding-block-start: 0;
   }
 
   .right {
