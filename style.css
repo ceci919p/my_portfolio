@@ -66,6 +66,7 @@ img {
   top: 0;
   transition: 0.5s ease-out;
   cursor: pointer;
+  font-weight: bolder;
 }
 
 .button:hover {
@@ -75,8 +76,9 @@ img {
 a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
-  font-weight: bold;
+
+  /*   font-size: 1rem;
+  font-weight: bold; */
 }
 
 .button_wrapper {
@@ -125,6 +127,7 @@ hr {
   margin-block: 1rem;
   margin-inline: auto;
   width: 11vw;
+  color: rgb(213, 213, 213);
 }
 
 /*----------------------------typography-----------------------*/
@@ -319,10 +322,11 @@ header {
 
 .specialization {
   margin-top: 0;
-}
 
-.specialization {
   color: var(--color-dark);
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: var(--font-display);
 }
 
 /*----------------------------experience-----------------------*/
@@ -526,6 +530,10 @@ footer li a:hover {
 /*----------------------------mediaquerys-----------------------*/
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
   .hamburger {
     display: block;
     margin-left: 0;
@@ -564,6 +572,8 @@ footer li a:hover {
     transition: 0.7s ease;
     color: var(--color-darker);
     font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-darker);
   }
 
   .nav_link:hover {
@@ -582,6 +592,7 @@ footer li a:hover {
 @media (min-width: 650px) {
   .image_container {
     padding: 1rem;
+    margin-right: 2.5rem;
   }
 
   #intro_text {
@@ -592,6 +603,10 @@ footer li a:hover {
 @media (min-width: 770px) {
   header {
     min-height: 80vh;
+  }
+
+  .specialization {
+    font-size: 1.8rem;
   }
 
   .project_pic {
@@ -666,6 +681,10 @@ footer li a:hover {
   .flex {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  .project_buttons_wrapper {
+    display: flex;
   }
 
   .project_buttons {
