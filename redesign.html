@@ -36,7 +36,11 @@
     <section class="project_header">
       <article class="article_wrapper">
         <section class="project_graphics">
-          <img class="project_pic" src="images/foxholm2.png" alt="project" />
+          <img
+            class="project_pic"
+            src="images/foxholm2.png"
+            alt="mockup of finished product"
+          />
         </section>
 
         <section class="project_text">
@@ -76,6 +80,34 @@
       </article>
     </section>
 
+    <section id="trello_popup">
+      <article>
+        <div class="align_end">
+          <button id="close_trello_popup">X</button>
+        </div>
+
+        <img
+          id="trello_popup_img"
+          src="images/trelloboard3.png"
+          alt="popup picture of state machine diagram"
+        />
+      </article>
+    </section>
+
+    <section id="code_popup">
+      <article>
+        <div class="align_end">
+          <button id="close_code_popup">X</button>
+        </div>
+
+        <img
+          id="code_popup_img"
+          src="images/codesnippet.png"
+          alt="popup picture of state machine diagram"
+        />
+      </article>
+    </section>
+
     <section class="process_text">
       <div class="process_text_wrapper">
         <div class="process_text_container">
@@ -97,7 +129,12 @@
               </p>
             </div>
             <div class="right">
-              <img class="mobile" src="images/trelloboard2.png" alt="" />
+              <img
+                id="open_trello_popup"
+                class="big shadow"
+                src="images/trelloboard2.png"
+                alt="picture of state machine diagram"
+              />
             </div>
           </section>
 
@@ -122,9 +159,10 @@
             </div>
             <div class="left">
               <img
+                id="open_code_popup"
                 class="big shadow"
                 src="images/codesnippet.png"
-                alt="paper prototype"
+                alt="picture of code snippet"
               />
             </div>
           </section>
@@ -152,7 +190,7 @@
               <img
                 class="mobile short"
                 src="images/foxholm3.png"
-                alt="game figure"
+                alt="mobile version of mockup"
               />
             </div>
           </section>
@@ -213,6 +251,8 @@
   </body>
   <script src="js/burgermenu.js"></script>
   <script src="js/reveal.js"></script>
+  <script src="js/red_popup.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </html>
