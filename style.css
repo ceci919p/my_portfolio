@@ -206,7 +206,8 @@ hr {
 
 /*----------------------------typography-----------------------*/
 p {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 65ch;
 }
 
 h1,
@@ -220,7 +221,7 @@ h5 {
 
 h1 {
   font-size: 3.052rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 h2 {
@@ -230,7 +231,7 @@ h2 {
 h3 {
   font-size: 1.953rem;
   margin-top: 1rem;
-  margin: 3rem 0 1.38rem;
+  margin: 1rem 0 1.38rem;
   font-family: var(--font-paragraph);
   font-weight: bolder;
   line-height: 1.3;
@@ -637,7 +638,8 @@ footer li a:hover {
     top: 70px;
     gap: 1rem;
     flex-direction: column;
-    background-color: var(--color-dark);
+    background-color: var(--color-light);
+
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -651,10 +653,9 @@ footer li a:hover {
 
   .nav_link {
     transition: 0.7s ease;
-    color: var(--color-darker);
+    color: var(--color-dark);
     font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--color-darker);
+    font-weight: bolder;
   }
 
   .nav_link:hover {
@@ -682,12 +683,25 @@ footer li a:hover {
 }
 
 @media (min-width: 770px) {
+  h1 {
+    margin-top: 1rem;
+  }
+
+  h3 {
+    margin: 3rem 0 1.38rem;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+  }
+
   header {
-    min-height: 80vh;
+    min-height: 65vh;
   }
 
   .specialization {
     font-size: 1.8rem;
+    margin-block-end: 0;
   }
 
   .project_pic {
@@ -781,11 +795,17 @@ footer li a:hover {
   .back {
     width: 20vw;
   }
+
+  #popup,
+  #code_popup,
+  #trello_popup {
+    padding-block: 5em;
+  }
 }
 
 @media (min-width: 1000px) {
   header {
-    min-height: 115vh;
+    min-height: 110vh;
   }
 
   #intro_text {
