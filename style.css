@@ -61,16 +61,6 @@ img {
   padding: 1rem 2rem;
   background-color: black;
   border: none;
-
-  position: relative;
-  top: 0;
-  transition: 0.5s ease-out;
-  cursor: pointer;
-  font-weight: bolder;
-}
-
-.button:hover {
-  transform: scale(1.05);
 }
 
 a {
@@ -206,7 +196,7 @@ hr {
 
 /*----------------------------typography-----------------------*/
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   max-width: 65ch;
 }
 
@@ -221,7 +211,7 @@ h5 {
 
 h1 {
   font-size: 3.052rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 h2 {
@@ -459,16 +449,6 @@ header {
   padding: 0.7rem 0.2rem;
   margin: 1rem;
   text-align: center;
-  position: sticky;
-
-  position: relative;
-  top: 0;
-  transition: 0.5s ease-out;
-  cursor: pointer;
-}
-
-.back:hover {
-  transform: translateX(-8px);
 }
 
 .project_graphics {
@@ -532,7 +512,7 @@ figcaption {
 .project_buttons {
   margin-block: 0.5rem;
   width: 100%;
-  margin-inline: 0.5rem;
+  /*  margin-inline: 0.5rem; */
 }
 
 .center_content {
@@ -685,6 +665,7 @@ footer li a:hover {
 @media (min-width: 770px) {
   h1 {
     margin-top: 1rem;
+    font-size: 2.8rem;
   }
 
   h3 {
@@ -701,7 +682,7 @@ footer li a:hover {
 
   .specialization {
     font-size: 1.8rem;
-    margin-block-end: 0;
+    margin-block-end: 1.5rem;
   }
 
   .project_pic {
@@ -790,6 +771,7 @@ footer li a:hover {
 
   .project_buttons {
     width: 40vw;
+    margin-inline: 0.5rem;
   }
 
   .back {
@@ -804,6 +786,33 @@ footer li a:hover {
 }
 
 @media (min-width: 1000px) {
+  h1 {
+    font-size: 3.052rem;
+  }
+
+  .button {
+    position: relative;
+    top: 0;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+
+  .button:hover {
+    transform: scale(1.05);
+  }
+
+  .back {
+    position: relative;
+    top: 0;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+  }
+
+  .back:hover {
+    transform: translateX(-8px);
+  }
+
   header {
     min-height: 110vh;
   }
