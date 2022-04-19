@@ -848,4 +848,10 @@ footer li a:hover {
   #trello_popup article {
     width: 60%;
   }
+
+  #popup,
+  #code_popup,
+  #trello_popup {
+    padding-block: 5em;
+  }
 }
