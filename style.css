@@ -887,4 +887,45 @@ footer li a:hover {
   #trello_popup {
     padding-block: 5em;
   }
+
+  .pic_and_text {
+    flex-wrap: nowrap;
+  }
+
+  .project_header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1500px) auto;
+    align-items: center;
+  }
+
+  .project_buttons {
+    width: 15vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header_graphics {
+    width: 26vw;
+  }
+
+  .project_header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1500px) auto;
+    align-items: center;
+  }
+
+  .project_header_wrapper {
+    grid-column: 2/3;
+  }
+
+  .project_pic {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 1700px) {
+  .square {
+    width: 29vh;
+    height: 37vh;
+  }
 }
