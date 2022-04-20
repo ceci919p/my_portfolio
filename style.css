@@ -544,6 +544,10 @@ figcaption {
   grid-column: 2/3;
 }
 
+.text_section {
+  opacity: 0;
+}
+
 /*---------------------------footer-----------------------*/
 
 footer {
