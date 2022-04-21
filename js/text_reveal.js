@@ -21,7 +21,7 @@ function revealAnimation() {
     });
 
     tl.to(section, {
-      duration: 1.5,
+      duration: 1.2,
       opacity: 1,
     });
   });
