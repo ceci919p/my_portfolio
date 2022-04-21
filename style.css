@@ -330,6 +330,23 @@ header {
   margin-block-end: 2.5rem;
 }
 
+.pulse {
+  animation-name: pulse_kf;
+  animation-duration: 1.15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes pulse_kf {
+  0% {
+    transform: translateY(0vw);
+  }
+  100% {
+    transform: translateY(0.7vw);
+  }
+}
+
 /*----------------------------intro-----------------------*/
 
 .image_container {
