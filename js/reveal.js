@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
       onEnter: function () {
         animateFrom(elem);
       },
-      onEnterBack: function () {
+      /*  onEnterBack: function () {
         animateFrom(elem, -1);
       },
       onLeave: function () {
         hide(elem);
-      }, // assure that the element is hidden when scrolled into view
+      }, // assure that the element is hidden when scrolled into view */
     });
   });
 });
