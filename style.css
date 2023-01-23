@@ -227,6 +227,21 @@ h3 {
   line-height: 1.3;
 }
 
+h4 {
+  margin-top: 0;
+}
+
+.project_title {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.project_semester {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: var(--font-paragraph);
+}
+
 /* h4 {
   font-size: 1.25rem;
   font-family: var(--font-paragraph);
@@ -243,7 +258,7 @@ nav {
   padding: 1rem;
 }
 
-nav a {
+nav li {
   text-decoration: none;
   color: var(--color-dark);
 }
@@ -297,7 +312,7 @@ nav a {
 
 .bar {
   display: block;
-  width: 25px;
+  width: 20px;
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;

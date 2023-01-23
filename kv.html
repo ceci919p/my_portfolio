@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Redesign</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="logo" href="index.html"
+        ><img class="logo_pic" src="images/logo.svg" alt="logo"
+      /></a>
+
+      <ul class="nav_menu">
+        <li class="nav_item">
+          <a href="animation.html" class="nav_link">Animation</a>
+        </li>
+        <li class="nav_item">
+          <a href="redesign.html" class="nav_link">Redesign</a>
+        </li>
+        <li class="nav_item">
+          <a href="hacked.html" class="nav_link">Hacked Hogwarts</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <a class="back_link" href="index.html#list">
+      <div class="back">← Go Back</div>
+    </a>
+
+    <section class="project_header">
+      <div class="project_header_wrapper">
+        <article class="article_wrapper">
+          <section class="project_graphics">
+            <img
+              class="project_pic"
+              src="images/Mockup2.png"
+              alt="mockup of finished product"
+            />
+          </section>
+
+          <section class="project_text">
+            <div class="text_wrapper">
+              <h1>Kattens Værn</h1>
+              <p>
+                Kattens Værn is an organization that focuses on helping wild and
+                stray cats in Denmark. When we met their representatives from
+                their cat shelter in Brøndby, the organization had a lot of
+                visiters on their website but struggled to convert it to
+                donations and/or adoptions. They wanted our help to simplfy and
+                modernize their website so that they could reach the younger
+                part of the target group, who they could see were active on
+                their social media. . <br />
+                <br />
+                After several weeks of researching, user testing and creating an
+                solution with wordpress, next.js, chakra UI etc. this was our
+                suggestion to a solution.
+              </p>
+
+              <div class="project_buttons_wrapper">
+                <div>
+                  <a href="https://eksamen-kv.netlify.app/" target="_blank"
+                    ><div class="button project_buttons center_text">
+                      Visit website
+                    </div></a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="https://github.com/PandaPoob/kv_eksamen"
+                    target="_blank"
+                    ><div class="button project_buttons center_text red">
+                      Github
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+
+    <section id="trello_popup">
+      <article>
+        <div class="align_end">
+          <button id="close_trello_popup">X</button>
+        </div>
+
+        <img
+          id="trello_popup_img"
+          src="images/trello.png"
+          alt="popup picture of state machine diagram"
+        />
+      </article>
+    </section>
+
+    <section id="code_popup">
+      <article>
+        <div class="align_end">
+          <button id="close_code_popup">X</button>
+        </div>
+
+        <img
+          id="code_popup_img"
+          src="images/kv_code.png"
+          alt="popup picture of state machine diagram"
+        />
+      </article>
+    </section>
+
+    <section class="process_text">
+      <div class="process_text_wrapper">
+        <div class="process_text_container">
+          <section class="text_section">
+            <div class="description_left">
+              <h2>The Process</h2>
+              <p>
+                In this project we had to find a company that wanted a complex
+                website. We used "design thinking" as a process method which
+                meant we worked in iterations through the different phases of
+                the project.
+
+                <br /><br />
+                To manage and keep track of the different tasks in our project,
+                we held daily SCRUM meetings and used Trello as SCRUM board.
+                Throughout the project we used a burndown chart to track our
+                progress. <br /><br />
+                During our research phase we tested and analyzed the existing
+                site with tools such as BMC, SWOT/TOWS, surveys etc. to help
+                identify Kattens Værn's problems. This gave us the right
+                insights to be able to initiate the ideate phase and develop new
+                solutions. Every iteration was based on results from user tests
+                and research.
+              </p>
+            </div>
+            <div class="left">
+              <img
+                id="open_trello_popup"
+                class="big shadow"
+                src="images/trello.png"
+                alt="picture of state machine diagram"
+              />
+            </div>
+          </section>
+
+          <section class="text_section">
+            <div class="description_right">
+              <h2>Code</h2>
+
+              <p>
+                The website was built using WordPress as our backend/database.
+                To be able to add an article to a listview e.g. a cat to a list
+                of cats ready for adoption, we used posts and the plugin "custom
+                fields".
+                <br /><br />
+
+                The frontend was built with Next.js which made it possible to
+                fetch data from WordPress using getStaticProps which is more
+                sustainable compared to other methods. Since the website was
+                very complex we used Chakra UI as a component and theme tool.
+                This way we could easily implement components such as dropdowns
+                and accordians with a consistent design.
+
+                <br /><br />
+                Netlify was used as frontend host. Since we were multiple people
+                coding on this project, we made git branches and pushed to the
+                main branch. This would trigger Netlify to build and update the
+                changes to the website/client side. Since we used static site
+                generation, which means HTML is generated on build time, netlify
+                would only opdate changes this way. Since we wanted employees of
+                Kattens Værn to be able to potentially add cats themselves
+                through WordPress, we added the plugin "WP Webhooks" which
+                triggers netlifly to build everytime there is changes to
+                WordPress data.
+              </p>
+            </div>
+            <div class="right">
+              <img
+                id="open_code_popup"
+                class="big shadow"
+                src="images/kv_code.png"
+                alt="picture of code snippet"
+              />
+            </div>
+          </section>
+
+          <section class="text_section">
+            <div class="description_left">
+              <h2>Design</h2>
+
+              <p>
+                After our research phase we concluded that the website consisted
+                of an overwhelmingly amount of information. The navigation
+                itself was very confusing with "hidden pages" and labels that
+                didn't always make sense to the target group. The layout of the
+                website wasn't consistent and did not comply with the
+                conventions which gave an messy and unprofessional vibe. Our
+                main focus was to simplfy the IA and modernize the website with
+                a new visual ID.
+                <br /><br />
+                Since this website would consist of many different colorful
+                images, the colorpalette was made in neutral colors that didn't
+                take attention away from the most important part - the cats. To
+                highlight important options such as donation we used a warm pink
+                as a secondary color. To catch the eye of the user we created a
+                contrast with a cold blue as well.
+                <br />
+                We also designed a new version of their exisiting logo, which
+                worked better on digital screens.
+                <br /><br />
+                When asking the target group what was most important when
+                deciding to donate to an organization, one of the most important
+                things was transparency. To bring out more of the feel of
+                Kattens Værn and get a look "behind the scenes" we filmed and
+                edited video content which introduces the organization and gives
+                an insight to their work.
+              </p>
+            </div>
+            <div class="left">
+              <img
+                class="big shadow"
+                src="images/Mockup.png"
+                alt="picture of code snippet"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="contact_info">
+        <h4>CONTACT INFO</h4>
+        <div>
+          <ul>
+            <li>Cecilie Jasmin Jørgensen</li>
+
+            <li>
+              <a class="foot_link" href="mailto:ceci919p@stud.kea.dk"
+                ><img class="link_icon" src="images/mail.png" alt="mail" />Send
+                mail</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="social_media">
+        <div>
+          <h4 class="footer_headline">SOCIAL MEDIA</h4>
+          <ul>
+            <li>
+              <a
+                class="foot_link"
+                href="https://github.com/ceci919p?tab=repositories"
+                target="_blank"
+              >
+                <img
+                  class="link_icon"
+                  src="images/github.png"
+                  alt="github"
+                />Github
+              </a>
+            </li>
+            <li>
+              <a
+                class="foot_link"
+                href="https://www.linkedin.com/in/cecilie-jasmin/"
+              >
+                <img
+                  class="link_icon"
+                  src="images/linkedin.png"
+                  alt="github"
+                />Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <script src="js/burgermenu.js"></script>
+    <script src="js/red_popup.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="js/text_reveal.js"></script>
+  </body>
+</html>
